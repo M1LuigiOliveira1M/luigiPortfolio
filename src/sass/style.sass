@@ -1,3 +1,26 @@
 @use 'mixins'
 @use 'variables'
 
+body
+    max-width: 100vw
+    margin: 0
+
+    /* nav-bar */
+
+header
+    display: grid
+    grid-template-columns: 1fr 2fr
+    grid-template-rows: 1fr
+    align-items: center
+    background-color: #fff
+    width: 100%
+    height: 50px
+    top: 0
+    
+
+
+    h2
+        font-size: variables.$font-size-large
+        color: variables.$primary-color
+        text-align: center
+        align-items: end

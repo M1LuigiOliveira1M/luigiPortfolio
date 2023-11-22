@@ -1,20 +1,20 @@
 @use 'variables'
 
 @mixin display-flex
-    display: flex
-    justify-content: center
-    align-items: center
+  display: flex
+  justify-content: center
+  align-items: center
 
 
 // buttons
 
             // btn-box
 @mixin btn-box
-    display: flex
-    height: 50px
-    width: 120px
-    justify-content: center
-    align-items: center
+  display: flex
+  height: 50px
+  width: 120px
+  justify-content: center
+  align-items: center
 
 @mixin btn-box-after
   text-shadow: 10 10px 10px white
@@ -37,8 +37,18 @@
 // Mixins elements
 
 @mixin pseudo-elements
-    display: block
-    position: absolute
-    content: ''
+  display: block
+  position: absolute
+  content: ''
     
-    
+// Texts
+
+@mixin titles
+  font-size: variables.$font-size-large
+  color: variables.$primary-color
+  text-align: center
+  align-items: center
+
+@mixin paragraph
+  color: variables.$text-color
+  font-size: variables.$font-size-small  
