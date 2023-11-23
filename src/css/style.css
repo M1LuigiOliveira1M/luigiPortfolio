@@ -147,12 +147,14 @@ header .nav_bar li a {
   display: grid;
   align-items: start;
 }
-.sect_home .my_introduction h1 {
+.sect_home .my_introduction .name_function h1 {
   font-size: 3.5rem;
   font-weight: normal;
   color: #3D3D3D;
 }
-.sect_home .my_introduction p {
+
+/* Global paragraph style*/
+.text {
   color: #717171;
   font-size: 1.1rem;
 }
