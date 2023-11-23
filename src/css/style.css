@@ -18,6 +18,7 @@ header {
   width: 100%;
   height: 50px;
   top: 0;
+  user-select: none;
 }
 header h2 {
   font-size: 2.5rem;
@@ -147,6 +148,7 @@ header .nav_bar li a {
   justify-self: right;
   box-shadow: 0px 10px 10px -10px #00ffc8;
   border: 2px solid #00ffc8;
+  user-select: none;
 }
 .sect_home .my_introduction {
   height: 400px;
@@ -186,6 +188,44 @@ header .nav_bar li a {
 .sect_home .my_introduction .div_skills:active {
   transform: translateY(5px);
   box-shadow: 0px 0px 0px 0px;
+}
+.sect_home .my_introduction .buttons_ctt_cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  justify-content: left;
+}
+.sect_home .my_introduction .buttons_ctt_cv .button_ctt {
+  display: flex;
+  height: 50px;
+  width: 120px;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 160px;
+  border: 1px solid rgba(61, 61, 61, 0.212);
+  border-radius: 10px;
+  transition: 0.3s ease;
+  user-select: none;
+}
+.sect_home .my_introduction .buttons_ctt_cv .button_ctt:hover {
+  text-shadow: -1px -1px 0px #00ffc8, 1px 1px 0px #00ffc8;
+  background-color: transparent;
+  border: 1px solid #00ffc8;
+  box-shadow: 0px 10px 10px -10px #00ffc8;
+  transition: 0.4 ease;
+  gap: 5px;
+}
+
+/*div-projects*/
+/*Projects-button*/
+.div_projects .welcome_projects {
+  height: 3.5rem;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
