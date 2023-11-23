@@ -125,6 +125,12 @@ header .nav_bar li a {
   transition: 0.2s;
 }
 
+/* Global paragraph style*/
+.text {
+  color: #717171;
+  font-size: 1.1rem;
+}
+
 /* Home */
 .sect_home {
   display: grid;
@@ -152,11 +158,34 @@ header .nav_bar li a {
   font-weight: normal;
   color: #3D3D3D;
 }
-
-/* Global paragraph style*/
-.text {
-  color: #717171;
-  font-size: 1.1rem;
+.sect_home .my_introduction .div_skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 50px;
+  background-color: #717171;
+  width: 70%;
+  border-radius: 30px;
+  box-shadow: 0px 5px 0px 0px #3D3D3D;
+}
+.sect_home .my_introduction .div_skills .hexagon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/hexagono.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  height: 42px;
+  width: 40px;
+  user-select: none;
+}
+.sect_home .my_introduction .div_skills .hexagon .img_icon_scale {
+  height: 23px;
+}
+.sect_home .my_introduction .div_skills:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

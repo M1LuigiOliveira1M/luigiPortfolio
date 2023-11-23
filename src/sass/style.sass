@@ -100,6 +100,10 @@ header
   background-color: variables.$primary-color
   transition: .2s
 
+/* Global paragraph style*/
+.text
+    @include mixins.paragraph
+
 /* Home */
 
 .sect_home
@@ -126,10 +130,33 @@ header
         .name_function h1
             font-size: 3.5rem
             font-weight: normal
-            color: #3D3D3D
+            color: variables.$secondary-color
+        
+        .div_skills
+            @include mixins.display-flex
+            gap: 20px
+            height: variables.$height-spacing
+            background-color: variables.$text-color
+            width: 70%
+            border-radius: variables.$spacing-unit
+            box-shadow: 0px 5px 0px 0px variables.$secondary-color
 
-/* Global paragraph style*/
-.text
-    @include mixins.paragraph
-    
-    
+            .hexagon
+                @include mixins.display-flex
+                background-image: url(../img/hexagono.png)
+                background-repeat: no-repeat
+                background-size: 40px
+                height: 42px
+                width: 40px
+                user-select: none
+
+                .img_icon_scale
+                    height: 23px
+        
+            &:active
+                transform: translateY(5px)
+                box-shadow: 0px 0px 0px 0px
+
+        
+        
+
