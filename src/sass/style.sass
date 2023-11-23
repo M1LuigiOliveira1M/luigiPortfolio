@@ -117,3 +117,17 @@ header
         justify-self: right
         box-shadow: variables.$shadow-spacing variables.$primary-color
         border: 2px solid variables.$primary-color
+
+    .my_function
+        height: 400px
+        display: grid
+        align-items: start
+
+        h1
+            font-size: 3.5rem
+            font-weight: normal
+            color: #3D3D3D
+
+        p
+            @include mixins.paragraph
+        
