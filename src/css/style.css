@@ -26,6 +26,23 @@ header h2 {
   text-align: center;
   align-items: end;
 }
+header h2::after {
+  display: block;
+  position: absolute;
+  content: "";
+  margin-left: 143px;
+  width: 0px;
+  height: 0px;
+  border-bottom: 4px solid transparent;
+  transition: 0.9s;
+  position: relative;
+}
+header h2:hover::after {
+  width: 20%;
+  height: 0px;
+  padding: 0px;
+  border-bottom: 4px solid #00ffc8;
+}
 header span {
   color: #3D3D3D;
 }
@@ -150,6 +167,9 @@ header .nav_bar li a {
   border: 2px solid #00ffc8;
   user-select: none;
 }
+.sect_home .my_photography:hover {
+  opacity: 0.9;
+}
 .sect_home .my_introduction {
   height: 400px;
   display: grid;
@@ -221,11 +241,41 @@ header .nav_bar li a {
 /*div-projects*/
 /*Projects-button*/
 .div_projects .welcome_projects {
-  height: 3.5rem;
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 60px;
+  width: 100%;
 }
+.div_projects .welcome_projects .button_ctt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 160px;
+  border: 1px solid rgba(61, 61, 61, 0.212);
+  border-radius: 10px;
+  color: #717171;
+  transition: 0.3s ease;
+}
+.div_projects .welcome_projects .button_ctt:hover {
+  text-shadow: -1px -1px 0px #00ffc8, 1px 1px 0px #00ffc8;
+  background-color: transparent;
+  border: 1px solid #00ffc8;
+  box-shadow: 0px 10px 10px -10px #00ffc8;
+  transition: 0.4 ease;
+  gap: 5px;
+}
+
+/* Line of division */
+.dividing_line {
+  display: flex;
+  height: 70px;
+  width: 1px;
+  background-color: rgba(61, 61, 61, 0.212);
+  margin: 0 auto;
+}
+
+/* Portfolio */
 
 /*# sourceMappingURL=style.css.map */

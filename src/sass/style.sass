@@ -29,6 +29,21 @@ header
         text-align: center
         align-items: end
 
+        &::after
+            @include mixins.pseudo-elements
+            margin-left: 143px
+            width: 0px
+            height: 0px
+            border-bottom: 4px solid transparent
+            transition: .9s
+            position: relative
+        
+        &:hover::after
+            width: 20%
+            height: 0px
+            padding: 0px
+            border-bottom: 4px solid variables.$primary-color
+
     span
         color: variables.$secondary-color
 
@@ -124,6 +139,9 @@ header
         border: 2px solid variables.$primary-color
         user-select: none
 
+        &:hover
+            opacity: .9
+
     .my_introduction
         height: 400px
         display: grid
@@ -179,8 +197,28 @@ header
 /*div-projects*/
 /*Projects-button*/
 .div_projects .welcome_projects
-    height: 3.5rem
-    width: 100vw
+    @include mixins.display-flex
+    height: 2*variables.$spacing-unit
+    width: 100%
+
+    .button_ctt
+        @include mixins.display-flex
+        height: 2*variables.$spacing-unit
+        width: 160px
+        border: 1px solid rgba(61, 61, 61, 0.212)
+        border-radius: 10px
+        color: variables.$text-color
+        transition: .3s ease
+
+        &:hover
+            @include mixins.btn-box-hover
+
+/* Line of division */
+.dividing_line
     display: flex
-    justify-content: center
-    align-items: center
+    height: 70px
+    width: 1px
+    background-color: rgba(61, 61, 61, 0.212)
+    margin: 0 auto
+
+/* Portfolio */
