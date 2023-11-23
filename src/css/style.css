@@ -65,21 +65,21 @@ header .nav_bar li a {
 }
 
 .button:hover::after {
-  text-shadow: 10 10px 10px white;
+  text-shadow: 10px 10px 10px white;
   background-color: transparent;
-  border: 3px solid rgb(0, 255, 213);
+  border: 3px solid #00ffc8;
   transition: 0.4 ease;
   position: absolute;
   display: block;
 }
 
 .button:hover {
-  text-shadow: -1px -1px 0px #00ffc8, 1px 1px 0px rgb(0, 255, 213);
+  text-shadow: -1px -1px 0px #00ffc8, 1px 1px 0px #00ffc8;
   background-color: transparent;
-  border: 1px solid rgb(0, 255, 213);
-  box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
+  border: 1px solid #00ffc8;
+  box-shadow: 0px 10px 10px -10px #00ffc8;
   transition: 0.4 ease;
-  gap: 4px;
+  gap: 5px;
 }
 
 #button_dContact {
@@ -90,6 +90,7 @@ header .nav_bar li a {
   color: #fff;
   height: 50px;
   width: 120px;
+  border: 2px dashed transparent;
   border-radius: 5px;
   transition: 0.4s ease-in-out;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -113,14 +114,33 @@ header .nav_bar li a {
 
 #button_dContact a:hover {
   color: #3D3D3D;
-  text-shadow: -1px -1px 0px #00ffc8, 1px 1px 0px rgb(0, 255, 213);
-  box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
+  text-shadow: -1px -1px 0px #00ffc8, 1px 1px 0px #00ffc8;
+  box-shadow: 0px 10px 10px -10px #00ffc8;
   text-shadow: 0px 10px 10px -10px #00aaff;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 #button_dContact:active {
-  background-color: #87dbd0;
+  background-color: #00ffc8;
+  transition: 0.2s;
+}
+
+/* Home */
+.sect_home {
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  gap: 60px;
+  padding: 30px;
+  grid-template-columns: 1fr 1fr;
+}
+.sect_home .my_photography {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  justify-self: right;
+  box-shadow: 0px 10px 10px -10px #00ffc8;
+  border: 2px solid #00ffc8;
 }
 
 /*# sourceMappingURL=style.css.map */
