@@ -314,5 +314,27 @@ header .nav_bar li a {
   border: 1px solid rgba(61, 61, 61, 0.212);
   margin: 0 auto;
 }
+.menu_skills ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.menu_skills ul .card_skill {
+  display: grid;
+  position: relative;
+  max-width: 300px;
+  align-content: center;
+  text-align: center;
+  height: 250px;
+  padding: 30px;
+  gap: 30px;
+  border-radius: 6px;
+  border: 1px solid #717171;
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=style.css.map */

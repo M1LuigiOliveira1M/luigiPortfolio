@@ -249,10 +249,35 @@ header
 .menu_skills
     display: grid
     max-width: 1200px
-    gap: 30px
+    gap: variables.$spacing-unit
     padding: 40px
     border: variables.$border-style
     margin: 0 auto
+
+    ul
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        grid-template-rows: auto
+        gap: 30px
+        align-items: center
+        justify-content: space-around
+        width: 100%
+
+        .card_skill
+            display: grid
+            position: relative
+            max-width: 10*variables.$spacing-unit
+            align-content: center
+            text-align: center
+            height: 5*variables.$height-spacing
+            padding: variables.$spacing-unit
+            gap: variables.$spacing-unit
+            border-radius: 6px
+            border: 1px solid variables.$text-color
+            cursor: pointer
+
+
+
 
 
 
