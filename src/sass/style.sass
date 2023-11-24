@@ -222,3 +222,26 @@ header
     margin: 0 auto
 
 /* Portfolio */
+
+.menu_projects
+    @include mixins.section-box
+
+    .projects
+        display: grid
+        gap: 20px
+        justify-content: center
+        grid-template-columns: repeat(4, 1fr)
+
+        .li_img_project
+            max-width: 100%
+            height: 100%
+            border-radius: 5px
+
+            .img_project
+                max-width: 100%
+                height: 100%
+                border-radius: 4px
+                cursor: pointer
+                background-color: #4564
+
+
