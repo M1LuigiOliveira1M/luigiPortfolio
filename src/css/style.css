@@ -336,5 +336,55 @@ header .nav_bar li a {
   border: 1px solid #717171;
   cursor: pointer;
 }
+.menu_skills ul .card_skill .icon_skill {
+  position: absolute;
+  right: 95px;
+  bottom: 210px;
+}
+.menu_skills ul .card_skill:hover h2 {
+  color: #00ffc8;
+  transition: 0.5s ease-in-out;
+}
+.menu_skills ul .card_skill::before {
+  display: block;
+  position: absolute;
+  content: "";
+  transition: 0.5s ease-in-out;
+  border-radius: 6px;
+  width: 0px;
+  height: 0px;
+  top: -2px;
+  right: -2px;
+  border-top: 2px solid transparent;
+  border-right: 2px solid transparent;
+}
+.menu_skills ul .card_skill::after {
+  display: block;
+  position: absolute;
+  content: "";
+  transition: 0.5s ease-in-out;
+  border-radius: 6px;
+  width: 0px;
+  height: 0px;
+  bottom: -2px;
+  left: -2px;
+  border-bottom: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+.menu_skills ul .card_skill:hover::before {
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #00ffc8;
+  border-right: 2px solid #00aaff;
+}
+.menu_skills ul .card_skill:hover::after {
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #002fff;
+  border-left: 2px solid #d900ff;
+}
+.menu_skills ul .card_skill p {
+  color: #3D3D3D;
+}
 
 /*# sourceMappingURL=style.css.map */
