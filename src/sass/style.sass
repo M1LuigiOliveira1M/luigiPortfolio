@@ -186,7 +186,7 @@ header
                 @include mixins.btn-box
                 height: 2*variables.$spacing-unit
                 width: 160px
-                border: 1px solid rgba(61, 61, 61, 0.212)
+                border: variables.$border-style
                 border-radius: 10px
                 transition: .3s ease
                 user-select: none
@@ -205,7 +205,7 @@ header
         @include mixins.display-flex
         height: 2*variables.$spacing-unit
         width: 160px
-        border: 1px solid rgba(61, 61, 61, 0.212)
+        border: variables.$border-style
         border-radius: 10px
         color: variables.$text-color
         transition: .3s ease
@@ -243,5 +243,16 @@ header
                 border-radius: 4px
                 cursor: pointer
                 background-color: #4564
+                
+/* Skills section */
+
+.menu_skills
+    display: grid
+    max-width: 1200px
+    gap: 30px
+    padding: 40px
+    border: variables.$border-style
+    margin: 0 auto
+
 
 
