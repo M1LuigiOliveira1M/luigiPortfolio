@@ -316,7 +316,7 @@ header .nav_bar li a {
 }
 .menu_skills ul {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   gap: 30px;
   align-items: center;
@@ -339,7 +339,9 @@ header .nav_bar li a {
 .menu_skills ul .card_skill .icon_skill {
   position: absolute;
   right: 95px;
-  bottom: 210px;
+  bottom: 218px;
+  height: 60px;
+  background-color: #fff;
 }
 .menu_skills ul .card_skill:hover h2 {
   color: #00ffc8;
@@ -385,6 +387,88 @@ header .nav_bar li a {
 }
 .menu_skills ul .card_skill p {
   color: #3D3D3D;
+}
+
+/* About section */
+.mainAbout_me {
+  display: grid;
+  max-width: 1200px;
+  justify-content: center;
+  border: 1px solid rgba(61, 61, 61, 0.212);
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+}
+.mainAbout_me .about_left {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 30px;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  background-color: rgba(224, 224, 224, 0.6470588235);
+}
+.mainAbout_me .about_left .img_about {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.mainAbout_me .about_left .img_about h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #00ffc8;
+  text-align: center;
+}
+.mainAbout_me .about_left .img_about h2 span {
+  color: #3D3D3D;
+}
+.mainAbout_me .about_left .img_about .my_photography {
+  height: 250px;
+  width: 250px;
+  border-radius: 20%;
+  justify-self: right;
+  box-shadow: 0px 10px 10px -10px #00ffc8;
+  border: 2px solid #00ffc8;
+  user-select: none;
+}
+.mainAbout_me .about_left .my_jobs ul {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 300px;
+  gap: 30px;
+}
+.mainAbout_me .about_left .my_jobs ul li {
+  background-color: #818181;
+  padding: 10px;
+  border: 2px solid #00ffc8;
+  border-radius: 1px 1px 90px 1px;
+  cursor: default;
+  transition: 0.2s ease-in-out;
+}
+.mainAbout_me .about_left .my_jobs ul li:hover {
+  box-shadow: 0px 10px 10px -10px #002fff;
+}
+.mainAbout_me .about_left .my_jobs ul li h5 {
+  font-size: 1.1rem;
+}
+.mainAbout_me .about_left .my_jobs ul li p {
+  color: #3D3D3D;
+  font-size: 0.9rem;
+}
+.mainAbout_me .about_text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+}
+.mainAbout_me .about_text h2 {
+  color: #3D3D3D;
+}
+.mainAbout_me .about_text p {
+  color: #717171;
+  text-indent: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
