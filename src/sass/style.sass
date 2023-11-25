@@ -152,7 +152,7 @@ header
             font-weight: normal
             color: variables.$secondary-color
         
-        .div_skills
+        .button_skills
             @include mixins.display-flex
             gap: 20px
             height: variables.$height-spacing
@@ -171,7 +171,7 @@ header
                 user-select: none
 
                 .img_icon_scale
-                    height: 23px
+                    height: variables.$icon-size-small
         
             &:active
                 transform: translateY(5px)
@@ -406,7 +406,37 @@ header
             color: variables.$text-color
             text-indent: variables.$height-spacing
 
+/* Contact Menu */
 
-            
 
+.contact_me_footer
+    display: grid
+    max-width: 1200px
+    gap: variables.$spacing-unit
+    justify-content: center
+    padding: variables.$height-spacing
+    border: 1px solid variables.$border-color
+    margin: 0 auto
+    margin-bottom: 70px
 
+    h2
+        font-size: 1.5rem
+        text-align: center
+        color: variables.$secondary-color
+
+    ul
+        @include mixins.display-flex
+        width: 300px
+        gap: variables.$spacing-unit
+
+        .hexagon
+            @include mixins.display-flex
+            background-image: url(../img/hexaCont.png)
+            background-repeat: no-repeat
+            background-size: 40px
+            height: 42px
+            width: 40px
+            user-select: none
+
+            .icon_contact
+               height: variables.$icon-size-small
