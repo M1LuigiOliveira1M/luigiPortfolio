@@ -174,6 +174,7 @@ header .nav_bar li a {
   height: 400px;
   display: grid;
   align-items: start;
+  gap: 80px;
 }
 .sect_home .my_introduction .name_function h1 {
   font-size: 3.5rem;
@@ -200,6 +201,10 @@ header .nav_bar li a {
   width: 70%;
   border-radius: 30px;
   box-shadow: 0px 5px 0px 0px #3D3D3D;
+  z-index: 2;
+  cursor: pointer;
+  position: relative;
+  top: -50px;
 }
 .sect_home .my_introduction .button_skills .hexagon {
   display: flex;
@@ -219,12 +224,45 @@ header .nav_bar li a {
   transform: translateY(5px);
   box-shadow: 0px 0px 0px 0px;
 }
+.sect_home .my_introduction .div_proficiency {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 70%;
+  align-content: center;
+  bottom: 150px;
+  position: relative;
+  text-align: left;
+  height: 250px;
+  padding: 30px;
+  padding-top: 50px;
+  border-radius: 0px 0px 30px 30px;
+  border: 1px solid #717171;
+  cursor: pointer;
+  user-select: none;
+  z-index: 0;
+}
+.sect_home .my_introduction .div_proficiency .div_proficiency_right {
+  display: grid;
+  gap: 15px;
+}
+.sect_home .my_introduction .div_proficiency .img_icon_scale {
+  height: 30px;
+}
+.sect_home .my_introduction .div_proficiency div i {
+  position: relative;
+  bottom: 7px;
+}
+.sect_home .my_introduction .div_dowloadcv {
+  position: relative;
+  top: -100px;
+}
 .sect_home .my_introduction .buttons_ctt_cv {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
   justify-content: left;
+  margin-top: 10px;
 }
 .sect_home .my_introduction .buttons_ctt_cv .button_ctt {
   display: flex;
@@ -246,6 +284,10 @@ header .nav_bar li a {
   box-shadow: 0px 10px 10px -10px #00ffc8;
   transition: 0.4 ease;
   gap: 5px;
+}
+
+.hidden {
+  display: none;
 }
 
 /*div-projects*/

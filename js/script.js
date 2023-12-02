@@ -43,3 +43,13 @@ function byMe(){
 }
 
 byMe()
+
+document.addEventListener("DOMContentLoaded", function () {
+    var proficiencyDiv = document.getElementById('dProficiency');
+    var downloadCvDiv = document.getElementById('dDowloadCv');
+
+    document.querySelector('.button_skills').addEventListener('click', function () {
+        proficiencyDiv.classList.toggle('hidden');
+        downloadCvDiv.classList.toggle('hidden');
+    });
+});

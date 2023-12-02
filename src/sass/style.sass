@@ -146,6 +146,7 @@ header
         height: 400px
         display: grid
         align-items: start
+        gap: 80px
 
         .name_function h1
             font-size: 3.5rem
@@ -170,6 +171,11 @@ header
             width: 70%
             border-radius: variables.$spacing-unit
             box-shadow: 0px 5px 0px 0px variables.$secondary-color
+            z-index: 2
+            cursor: pointer
+            position: relative
+            top: -50px
+
 
             .hexagon
                 @include mixins.display-flex
@@ -186,11 +192,46 @@ header
             &:active
                 transform: translateY(5px)
                 box-shadow: 0px 0px 0px 0px
+        
+        .div_proficiency
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            max-width: 70%
+            align-content: center
+            bottom: 150px
+            position: relative
+            text-align: left
+            height: 5*variables.$height-spacing
+            padding: 30px
+            padding-top: 50px
+            border-radius: 0px 0px 30px 30px
+            border: 1px solid variables.$text-color
+            cursor: pointer
+            user-select: none
+            z-index: 0
+
+            .div_proficiency_right
+                display: grid
+                gap: 15px
+                
+
+            
+            .img_icon_scale
+                    height: 30px
+
+            div i
+                    position: relative
+                    bottom: 7px
+
+        .div_dowloadcv
+            position: relative
+            top: -100px
 
         .buttons_ctt_cv
             @include mixins.display-flex
             gap: variables.$spacing-unit
             justify-content: left
+            margin-top: 10px
 
             .button_ctt
                 @include mixins.btn-box
@@ -203,6 +244,10 @@ header
 
                 &:hover
                     @include mixins.btn-box-hover
+
+.hidden
+    display: none
+
                     
 /*div-projects*/
 /*Projects-button*/
