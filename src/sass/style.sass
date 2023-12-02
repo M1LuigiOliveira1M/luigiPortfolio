@@ -151,6 +151,16 @@ header
             font-size: 3.5rem
             font-weight: normal
             color: variables.$secondary-color
+
+        .typingText::after 
+            display: inline
+            position: relative
+            right: 5px
+            top: -1px
+            content: '|'
+            margin-left: 5px
+            opacity: 1
+            animation: flashing .5s infinite
         
         .button_skills
             @include mixins.display-flex
@@ -228,41 +238,49 @@ header
 
     .projects
         display: grid
+        width: 1198px
         gap: 20px
         justify-content: center
-        grid-template-columns: repeat(4, 1fr)
+        grid-template-columns: repeat(1fr)
+        overflow: hidden
 
         .li_img_project
             max-width: 100%
             height: 100%
             border-radius: 5px
+            overflow: hidden
+            display: none
+            animation: rightSectionProject 2s ease
+        
+            &.active
+                display: block
 
             .img_project
-                width: 265px
-                height: 201px
-                border-radius: 4px
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 1000px
+                height: 100px
+                border-radius: 5px
                 cursor: pointer
-                background-color: variables.$text-color
+                background-color: variables.$background-color
+                border: 1px solid variables.$primary-color
+                transition: .4s ease
+            
+                h2
+                    font-size: variables.$font-size-large
+                    color: variables.$text-color
+                    font-weight: 100
 
-                .rotate_banner
-                    transform: rotate(30deg)
-                    position: relative
-                    top: 70px
-                    right: 20px
-
-                    .banner_project
-                        width: 310px
-                        height: 40px
-                        background-color: variables.$shadow-color
-                        transform: skew(30deg)
-                        border-radius: 5px
-                        box-shadow: 0px 5px 0px 0px variables.$shadow-two-color
+    .fa_circle_selector    
+        color: variables.$primary-color
+        gap: 10px
+        display: flex
+        cursor: pointer
+        margin-top: 20px
+        justify-content: center
 
 
-                        h2
-                            text-align: center
-                            font-weight: 700
-                
 /* Skills section */
 
 .menu_skills
@@ -459,3 +477,29 @@ header
             
             .icon_contact
                height: variables.$icon-size-small
+
+
+// Keyframes
+    
+@keyframes flashing
+    from
+        opacity: 1
+    
+    
+    to
+        opacity: 0
+    
+@keyframes rightSectionProject
+    0%  
+        transition: 3s
+        transform: translate3d(0px, 0, 0)
+    
+    75%
+        transform: translate3d(1100px, 0, 0)
+
+    78%
+        transform: translate3d(0px, -1100px, 0)
+    
+    0%  
+        transition: 3s
+        transform: translate3d(0px, 0, 0)
