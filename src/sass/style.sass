@@ -310,8 +310,8 @@ header
                 cursor: pointer
                 background-color: variables.$background-color
                 border: 1px solid variables.$primary-color
-                transition: .4s ease
-            
+                transition: .4s ease  
+
                 h2
                     font-size: variables.$font-size-large
                     color: variables.$text-color
@@ -324,7 +324,6 @@ header
         cursor: pointer
         margin-top: 20px
         justify-content: center
-
 
 /* Skills section */
 
@@ -548,3 +547,20 @@ header
     0%  
         transition: 3s
         transform: translate3d(0px, 0, 0)
+
+@keyframes reti_move
+    0%
+        transform: translate3d(0, 0, 0)
+
+    33%
+        transform: translate3d(0, 10px, 0)
+
+    66%
+        transform: translate3d(0, -10px, 0)
+
+    100%
+        transform: translate3d(0, 0px, 0)
+
+
+
+        
