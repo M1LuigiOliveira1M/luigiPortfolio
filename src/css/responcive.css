@@ -1,6 +1,6 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 720px) {
     *{
-        max-width: 90vw;
+        max-width: 100vw;
     }
     header{
         width: 100vw;
@@ -28,10 +28,17 @@
     }
     .sect_home .my_introduction{
         display: grid;
-
     }
     .sect_home .my_introduction .button_skills {
-        display: none;
+      width: 90%;
+    }
+    .sect_home .my_introduction .button_skills .hexagon {
+      background-size: 40px;
+    }
+    .sect_home .my_introduction .div_proficiency{
+      padding: 0 auto;
+      max-width: 90%;
+      font-size: .7rem;
     }
     .sect_home .my_introduction .div_dowloadcv {
         justify-self: left;
