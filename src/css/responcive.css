@@ -1,6 +1,6 @@
 @media only screen and (max-width: 600px) {
     *{
-        max-width: 100vw;
+        max-width: 90vw;
     }
     header{
         width: 100vw;
@@ -74,46 +74,52 @@
 
     .menu_skills {
         width: 90%;
-        height: 450px; 
         gap: 0; 
-        padding: 10px;
+        padding: 20px;
       }
       .menu_skills ul {
-        gap: 6px;
+        gap: 20px;
         grid-template-columns: 1fr 1fr;
       }
       .menu_skills ul .card_skill {
         max-width: 100%; 
-        height: 100px; 
-        padding: 0; 
+        height: 120px; 
+        padding: 20px; 
         gap: 0; 
       }
+      .menu_skills ul .card_skill:hover h2 {
+        display: none;
+      }
+      .menu_skills ul .card_skill:hover p {
+        display: block;
+      }
       .menu_skills ul .card_skill .icon_skill {
-        right: 122px; 
-        bottom: 60px;  
-        height: 35px; 
+        right: 115px; 
+        bottom: 90px;  
+        height: 35px;
+        z-index: 2; 
       }
       .menu_skills ul .card_skill::before {
-        top: -1px;
-        right: -1px; 
-        border-top: 1px solid transparent; 
-        border-right: 1px solid transparent; 
+        top: -2px;
+        right: -2px; 
+        border-top: 2px solid transparent; 
+        border-right: 2px solid transparent; 
       }
       .menu_skills ul .card_skill::after {
-        bottom: -1px;
-        left: -1px; 
-        border-bottom: 1px solid transparent; 
-        border-left: 1px solid transparent; 
+        bottom: -2px;
+        left: -2px; 
+        border-bottom: 2px solid transparent; 
+        border-left: 2px solid transparent; 
       }
       .menu_skills ul .card_skill:hover::before {
-        border-top: 1px solid #00ffc8; 
-        border-right: 1px solid #00aaff; 
+        border-top: 2px solid #00ffc8; 
+        border-right: 2px solid #00aaff; 
       }
       .menu_skills ul .card_skill:hover::after {
         width: 100%;
         height: 100%;
-        border-bottom: 1px solid #002fff; /* 2px * 0.2 */
-        border-left: 1px solid #d900ff; /* 2px * 0.2 */
+        border-bottom: 2px solid #002fff; 
+        border-left: 2px solid #d900ff; 
       }
       .menu_skills ul .card_skill h2 {
         font-size: 1.2rem;
@@ -121,6 +127,8 @@
       }
       .menu_skills ul .card_skill p{
         display: none;
+        font-size: .7rem;
+        height: 100%;
     }  
       
       /* About section */
@@ -131,7 +139,7 @@
       }
       .mainAbout_me .about_left {
         row-gap: 6px; 
-        padding: 8px;
+        padding: 2px;
         overflow: hidden; 
       }
       .mainAbout_me .about_left .img_about {
@@ -139,15 +147,16 @@
       }
       .mainAbout_me .about_left .img_about h2 {
         font-size: 1.5rem;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
       .mainAbout_me .about_left .img_about .my_photography {
         height: 130px; 
         width: 130px; 
+        margin: 0 auto;
       }
       .mainAbout_me .about_left .my_jobs ul {
-        padding: 10px; 
-        width: 170px; 
+        padding: 0px; 
+        width: 160px; 
         gap: 10px; 
       }
       .mainAbout_me .about_left .my_jobs ul li {
@@ -157,10 +166,10 @@
         box-shadow: 0px 2px 2px -2px #002fff;
       }
       .mainAbout_me .about_left .my_jobs ul li h5 {
-        font-size: 0.6rem;
+        font-size: .7rem;
       }
       .mainAbout_me .about_left .my_jobs ul li p {
-        font-size: 0.3rem;
+        font-size: .6rem;
       }
       .mainAbout_me .about_text {
         gap: 6px; 
