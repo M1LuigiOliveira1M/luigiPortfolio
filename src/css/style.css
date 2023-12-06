@@ -460,8 +460,8 @@ header .nav_bar li a {
 .menu_skills ul .card_skill:hover::after {
   width: 100%;
   height: 100%;
-  border-bottom: 2px solid #002fff;
-  border-left: 2px solid #d900ff;
+  border-bottom: 2px solid #00ffc8;
+  border-left: 2px solid #00aaff;
 }
 .menu_skills ul .card_skill p {
   color: #3D3D3D;
