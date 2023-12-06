@@ -107,28 +107,7 @@
         height: 35px;
         z-index: 2; 
       }
-      .menu_skills ul .card_skill::before {
-        top: -2px;
-        right: -2px; 
-        border-top: 2px solid transparent; 
-        border-right: 2px solid transparent; 
-      }
-      .menu_skills ul .card_skill::after {
-        bottom: -2px;
-        left: -2px; 
-        border-bottom: 2px solid transparent; 
-        border-left: 2px solid transparent; 
-      }
-      .menu_skills ul .card_skill:hover::before {
-        border-top: 2px solid #00ffc8; 
-        border-right: 2px solid #00aaff; 
-      }
-      .menu_skills ul .card_skill:hover::after {
-        width: 100%;
-        height: 100%;
-        border-bottom: 2px solid #002fff; 
-        border-left: 2px solid #d900ff; 
-      }
+      
       .menu_skills ul .card_skill h2 {
         font-size: 1.2rem;
         color: #3D3D3D;
